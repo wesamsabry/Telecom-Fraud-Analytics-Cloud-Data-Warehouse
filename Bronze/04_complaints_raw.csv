@@ -1,0 +1,601 @@
+complaint_id,reporter_id,subject_id,date,complaint_type,severity,resolution,days_to_resolve
+CMP00001,VF-004357,VF-000218,2026-03-26,Identity Theft,med,,
+CMP00002,AGENT-024,VF-002278,2026-02-15,Identity Theft,Medium,Under Review,
+CMP00003,AGENT-006,VF-001378,2026-01-25,Unauthorized Balance Deduction,med,Rejected,
+CMP00004,VF-004954,VF-001311,2026-03-22,Fraud Report,Critical,Rejected,
+CMP00005,AGENT-035,VF-000040,2026-01-18,Billing Issue,High,Rejected,
+CMP00006,VF-004861,VF-004416,2026-03-01,Fake Collection Service,low,Resolved,1.0
+CMP00007,AGENT-033,VF-003510,2026-03-24,Fraud Report,critical,Resolved,1.0
+CMP00008,VF-000362,VF-003216,2026-01-02,Unknown Calls,critical,Under Review,
+CMP00009,VF-004553,VF-001311,2026-02-11,Billing Issue,Low,Rejected,
+CMP00010,AGENT-018,VF-004101,2026-03-29,Unknown Calls,critical,Rejected,
+CMP00011,VF-003758,VF-001668,2026-01-16,Fake Collection Service,Critical,Rejected,
+CMP00012,VF-003072,VF-002170,2026-01-20,Unauthorized Balance Deduction,Low,,
+CMP00013,AGENT-045,VF-003103,2026-03-01,Spam Messages,High,,
+CMP00014,AGENT-021,VF-001630,2026-02-10,Fraud Report,Critical,Rejected,
+CMP00015,AGENT-029,VF-000760,2026-03-12,Identity Theft,HIGH,Transferred to Legal,
+CMP00016,AGENT-042,VF-001205,2026-02-05,Fake Collection Service,med,Rejected,
+CMP00017,VF-004904,VF-001717,2026-01-05,Fake Collection Service,critical,,
+CMP00018,AGENT-036,VF-002758,2026-02-15,Unknown Calls,critical,Under Review,
+CMP00019,AGENT-009,VF-002006,2026-01-09,Unknown Calls,Critical,Resolved,25.0
+CMP00020,AGENT-035,VF-004920,2026-03-02,Fraud Report,Medium,Rejected,
+CMP00021,AGENT-038,VF-001171,2026-03-03,Fake Collection Service,critical,Rejected,
+CMP00022,VF-003913,VF-004380,2026-03-02,Spam Messages,Low,,
+CMP00023,VF-002779,VF-000459,2026-01-05,Fraud Report,HIGH,Transferred to Legal,
+CMP00024,AGENT-024,VF-003459,2026-03-02,Identity Theft,Critical,Transferred to Legal,
+CMP00025,VF-003652,VF-001729,2026-01-03,Fake Collection Service,med,Rejected,
+CMP00026,VF-001423,VF-001365,2026-02-16,Unknown Calls,MEDIUM,,
+CMP00027,VF-000581,VF-002279,2026-03-08,Unknown Calls,MEDIUM,Resolved,26.0
+CMP00028,VF-001478,VF-004470,2026-01-13,Unauthorized Balance Deduction,MEDIUM,Transferred to Legal,
+CMP00029,VF-000483,VF-003666,2026-01-20,Fake Collection Service,HIGH,Under Review,
+CMP00030,VF-002334,VF-002785,2026-03-17,Billing Issue,Medium,,
+CMP00031,VF-001553,VF-003171,2026-02-06,Spam Messages,Critical,Transferred to Legal,
+CMP00032,VF-004509,VF-001936,2026-03-22,Unauthorized Balance Deduction,low,Resolved,15.0
+CMP00033,VF-003006,VF-001989,2026-02-06,Fake Collection Service,Critical,Rejected,
+CMP00034,VF-003663,VF-000793,2026-01-25,Unauthorized Balance Deduction,critical,Under Review,
+CMP00035,VF-003628,VF-004454,2026-03-14,Unauthorized Balance Deduction,High,,
+CMP00036,VF-004356,VF-002153,2026-01-06,Billing Issue,High,Resolved,9.0
+CMP00037,VF-001758,VF-000073,2026-03-30,Fake Collection Service,Low,Transferred to Legal,
+CMP00038,AGENT-043,VF-002121,2026-02-20,Unauthorized Balance Deduction,critical,Transferred to Legal,
+CMP00039,VF-002341,VF-002919,2026-02-27,Unauthorized Balance Deduction,High,Resolved,22.0
+CMP00040,VF-001454,VF-000713,2026-01-31,Identity Theft,Critical,Resolved,1.0
+CMP00041,VF-003341,VF-002405,2026-01-21,Fraud Report,MEDIUM,Resolved,14.0
+CMP00042,VF-004982,VF-003167,2026-01-03,Unauthorized Balance Deduction,Critical,Under Review,
+CMP00043,VF-004659,VF-002287,2026-02-15,Unknown Calls,High,Transferred to Legal,
+CMP00044,AGENT-021,VF-002170,2026-02-12,Spam Messages,med,,
+CMP00045,VF-003938,VF-001729,2026-01-30,Fraud Report,HIGH,Resolved,22.0
+CMP00046,AGENT-038,VF-000054,2026-03-17,Unauthorized Balance Deduction,Critical,,
+CMP00047,VF-001281,VF-000838,2026-01-28,Spam Messages,low,Transferred to Legal,
+CMP00048,VF-003080,VF-004757,2026-01-24,Spam Messages,low,Resolved,22.0
+CMP00049,VF-003700,VF-003186,2026-01-19,Fake Collection Service,med,Transferred to Legal,
+CMP00050,VF-003052,VF-000521,2026-03-25,Fake Collection Service,Low,Under Review,
+CMP00051,AGENT-030,VF-003463,2026-02-17,Unknown Calls,High,Under Review,
+CMP00052,VF-001744,VF-003683,2026-01-11,Identity Theft,med,Resolved,17.0
+CMP00053,VF-002114,VF-003064,2026-03-15,Unknown Calls,High,Resolved,19.0
+CMP00054,AGENT-032,VF-000173,2026-03-26,Fake Collection Service,critical,,
+CMP00055,AGENT-028,VF-003859,2026-01-24,Unknown Calls,Low,Resolved,13.0
+CMP00056,VF-000932,VF-000394,2026-03-21,Unknown Calls,HIGH,Rejected,
+CMP00057,VF-000292,VF-000871,2026-01-11,Billing Issue,High,Under Review,
+CMP00058,AGENT-036,VF-001576,2026-03-30,Unauthorized Balance Deduction,Medium,Under Review,
+CMP00059,VF-002012,VF-004828,2026-03-26,Fake Collection Service,Medium,Transferred to Legal,
+CMP00060,AGENT-012,VF-000923,2026-03-25,Billing Issue,HIGH,,
+CMP00061,AGENT-018,VF-001630,2026-01-21,Unauthorized Balance Deduction,med,Resolved,4.0
+CMP00062,AGENT-020,VF-004451,2026-03-01,Spam Messages,Medium,Transferred to Legal,
+CMP00063,VF-001096,VF-001253,2026-01-31,Unknown Calls,critical,Transferred to Legal,
+CMP00064,AGENT-003,VF-000330,2026-03-02,Billing Issue,Low,Under Review,
+CMP00065,VF-000290,VF-003717,2026-01-20,Spam Messages,med,Under Review,
+CMP00066,VF-002427,VF-002007,2026-02-10,Unknown Calls,HIGH,Under Review,
+CMP00067,AGENT-016,VF-001215,2026-03-01,Fraud Report,med,Under Review,
+CMP00068,AGENT-019,VF-002540,2026-01-17,Unauthorized Balance Deduction,Low,Rejected,
+CMP00069,VF-000084,VF-002060,2026-01-24,Spam Messages,critical,Resolved,29.0
+CMP00070,AGENT-041,VF-001797,2026-03-15,Fraud Report,HIGH,,
+CMP00071,VF-002184,VF-000543,2026-01-02,Fraud Report,Low,Under Review,
+CMP00072,VF-001835,VF-001012,2026-02-04,Unknown Calls,High,Resolved,16.0
+CMP00073,VF-000449,VF-003109,2026-01-10,Spam Messages,Critical,,
+CMP00074,AGENT-023,VF-000005,2026-02-06,Billing Issue,HIGH,Resolved,17.0
+CMP00075,VF-000684,VF-004730,2026-01-08,Identity Theft,HIGH,,
+CMP00076,AGENT-037,VF-001023,2026-02-18,Unauthorized Balance Deduction,critical,Under Review,
+CMP00077,VF-001931,VF-000760,2026-03-24,Billing Issue,Low,Transferred to Legal,
+CMP00078,VF-003355,VF-003802,2026-03-01,Fraud Report,critical,Under Review,
+CMP00079,VF-000814,VF-000745,2026-02-08,Fake Collection Service,HIGH,Resolved,6.0
+CMP00080,VF-002829,VF-002585,2026-01-13,Fraud Report,High,Transferred to Legal,
+CMP00081,VF-003343,VF-004393,2026-03-26,Billing Issue,HIGH,Under Review,
+CMP00082,VF-001902,VF-000263,2026-02-26,Identity Theft,low,Transferred to Legal,
+CMP00083,AGENT-026,VF-003113,2026-02-20,Fraud Report,med,Resolved,2.0
+CMP00084,VF-001880,VF-003437,2026-02-21,Billing Issue,med,Rejected,
+CMP00085,AGENT-027,VF-004149,2026-02-12,Identity Theft,HIGH,,
+CMP00086,VF-000287,VF-004379,2026-03-12,Fraud Report,Critical,Under Review,
+CMP00087,VF-004492,VF-003715,2026-01-23,Unauthorized Balance Deduction,HIGH,Rejected,
+CMP00088,AGENT-036,VF-000023,2026-02-06,Fake Collection Service,critical,Transferred to Legal,
+CMP00089,AGENT-006,VF-002060,2026-01-14,Spam Messages,MEDIUM,Rejected,
+CMP00090,AGENT-045,VF-002167,2026-02-23,Unauthorized Balance Deduction,MEDIUM,Under Review,
+CMP00091,AGENT-029,VF-002521,2026-01-26,Billing Issue,Medium,Under Review,
+CMP00092,VF-003129,VF-004399,2026-03-28,Spam Messages,Low,Resolved,17.0
+CMP00093,VF-001092,VF-003620,2026-03-18,Identity Theft,MEDIUM,Resolved,27.0
+CMP00094,VF-003242,VF-004101,2026-03-01,Billing Issue,Medium,Transferred to Legal,
+CMP00095,VF-004525,VF-002989,2026-03-29,Fraud Report,low,,
+CMP00096,VF-001565,VF-003715,2026-02-23,Identity Theft,High,Resolved,13.0
+CMP00097,AGENT-045,VF-003999,2026-03-10,Fraud Report,critical,,
+CMP00098,VF-003150,VF-000588,2026-03-30,Unknown Calls,Medium,Transferred to Legal,
+CMP00099,AGENT-045,VF-004428,2026-02-17,Identity Theft,Medium,Resolved,23.0
+CMP00100,AGENT-025,VF-004599,2026-01-28,Fake Collection Service,Critical,Rejected,
+CMP00101,VF-002708,VF-002981,2026-02-12,Billing Issue,med,Under Review,
+CMP00102,VF-000526,VF-003680,2026-02-15,Identity Theft,Medium,,
+CMP00103,VF-001174,VF-000261,2026-02-16,Fake Collection Service,HIGH,,
+CMP00104,AGENT-026,VF-004393,2026-03-21,Unauthorized Balance Deduction,Low,Transferred to Legal,
+CMP00105,AGENT-047,VF-003457,2026-02-07,Unauthorized Balance Deduction,Medium,Under Review,
+CMP00106,VF-002627,VF-000261,2026-03-21,Unauthorized Balance Deduction,Medium,Resolved,20.0
+CMP00107,VF-000854,VF-003915,2026-02-27,Unknown Calls,High,,
+CMP00108,AGENT-023,VF-002308,2026-03-21,Unknown Calls,High,,
+CMP00109,VF-001601,VF-001994,2026-01-14,Fraud Report,low,Transferred to Legal,
+CMP00110,AGENT-044,VF-002117,2026-03-13,Fraud Report,critical,,
+CMP00111,AGENT-028,VF-003693,2026-03-28,Fraud Report,HIGH,,
+CMP00112,AGENT-010,VF-002599,2026-01-11,Identity Theft,MEDIUM,Resolved,7.0
+CMP00113,AGENT-025,VF-003337,2026-03-23,Fraud Report,critical,Rejected,
+CMP00114,AGENT-005,VF-003764,2026-03-07,Unauthorized Balance Deduction,MEDIUM,Under Review,
+CMP00115,VF-001677,VF-000838,2026-02-20,Fraud Report,med,Resolved,2.0
+CMP00116,AGENT-046,VF-001190,2026-02-08,Unauthorized Balance Deduction,Critical,Transferred to Legal,
+CMP00117,VF-001825,VF-003764,2026-02-26,Unauthorized Balance Deduction,critical,Under Review,
+CMP00118,VF-004569,VF-000585,2026-02-21,Fraud Report,High,Under Review,
+CMP00119,VF-000526,VF-004991,2026-03-14,Fake Collection Service,HIGH,Rejected,
+CMP00120,VF-004509,VF-000724,2026-02-27,Spam Messages,critical,Resolved,21.0
+CMP00121,VF-004540,VF-001333,2026-03-05,Spam Messages,Critical,Under Review,
+CMP00122,VF-000818,VF-004468,2026-01-09,Billing Issue,Medium,,
+CMP00123,AGENT-042,VF-004730,2026-02-12,Fake Collection Service,HIGH,Transferred to Legal,
+CMP00124,AGENT-008,VF-003974,2026-02-14,Unauthorized Balance Deduction,Low,,
+CMP00125,VF-002246,VF-001464,2026-01-23,Fake Collection Service,med,,
+CMP00126,AGENT-005,VF-001568,2026-02-14,Fraud Report,Critical,Transferred to Legal,
+CMP00127,VF-001595,VF-000230,2026-01-05,Unauthorized Balance Deduction,critical,,
+CMP00128,AGENT-008,VF-000543,2026-02-15,Unauthorized Balance Deduction,Low,,
+CMP00129,AGENT-046,VF-002678,2026-01-19,Unknown Calls,med,,
+CMP00130,AGENT-023,VF-001800,2026-03-15,Spam Messages,High,Transferred to Legal,
+CMP00131,AGENT-024,VF-004419,2026-03-14,Unauthorized Balance Deduction,MEDIUM,Transferred to Legal,
+CMP00132,VF-002580,VF-001371,2026-01-05,Unknown Calls,med,Rejected,
+CMP00133,VF-000407,VF-004416,2026-03-16,Identity Theft,HIGH,,
+CMP00134,VF-004828,VF-004571,2026-02-12,Unauthorized Balance Deduction,med,,
+CMP00135,AGENT-015,VF-002837,2026-03-23,Fraud Report,critical,Resolved,23.0
+CMP00136,AGENT-042,VF-002803,2026-01-20,Billing Issue,MEDIUM,,
+CMP00137,AGENT-024,VF-000745,2026-03-22,Billing Issue,HIGH,,
+CMP00138,VF-004070,VF-004154,2026-02-27,Fake Collection Service,med,Resolved,26.0
+CMP00139,AGENT-044,VF-000376,2026-01-13,Billing Issue,Critical,,
+CMP00140,AGENT-017,VF-004533,2026-03-04,Fake Collection Service,MEDIUM,Resolved,4.0
+CMP00141,AGENT-017,VF-004335,2026-01-31,Unauthorized Balance Deduction,Medium,,
+CMP00142,AGENT-046,VF-003402,2026-03-24,Spam Messages,MEDIUM,Under Review,
+CMP00143,VF-000366,VF-004172,2026-01-06,Billing Issue,HIGH,Resolved,12.0
+CMP00144,AGENT-018,VF-003350,2026-01-05,Unknown Calls,HIGH,Transferred to Legal,
+CMP00145,AGENT-047,VF-000855,2026-03-22,Billing Issue,critical,,
+CMP00146,VF-003925,VF-002254,2026-01-03,Identity Theft,low,Transferred to Legal,
+CMP00147,VF-002106,VF-001271,2026-03-12,Identity Theft,critical,,
+CMP00148,VF-004088,VF-000386,2026-01-05,Fake Collection Service,med,Under Review,
+CMP00149,VF-003150,VF-003562,2026-03-04,Identity Theft,Critical,Under Review,
+CMP00150,VF-002220,VF-004957,2026-02-26,Fraud Report,MEDIUM,,
+CMP00151,VF-000645,VF-002438,2026-01-01,Identity Theft,HIGH,,
+CMP00152,VF-001124,VF-000765,2026-01-31,Fraud Report,Low,,
+CMP00153,VF-003539,VF-003679,2026-02-19,Fake Collection Service,High,Resolved,15.0
+CMP00154,VF-000475,VF-001464,2026-02-24,Fake Collection Service,Low,Under Review,
+CMP00155,AGENT-037,VF-002419,2026-01-22,Identity Theft,Critical,Transferred to Legal,
+CMP00156,VF-001104,VF-001311,2026-03-04,Fake Collection Service,MEDIUM,Resolved,11.0
+CMP00157,VF-001251,VF-000808,2026-02-03,Unauthorized Balance Deduction,critical,Resolved,12.0
+CMP00158,VF-004697,VF-000263,2026-02-07,Fake Collection Service,HIGH,Rejected,
+CMP00159,AGENT-037,VF-001867,2026-01-27,Identity Theft,Low,Rejected,
+CMP00160,VF-001869,VF-002194,2026-02-03,Billing Issue,med,,
+CMP00161,AGENT-009,VF-000037,2026-01-02,Identity Theft,Critical,,
+CMP00162,AGENT-032,VF-002279,2026-03-28,Unknown Calls,med,Transferred to Legal,
+CMP00163,AGENT-016,VF-000713,2026-03-06,Unknown Calls,HIGH,Rejected,
+CMP00164,AGENT-017,VF-004975,2026-01-20,Spam Messages,HIGH,Transferred to Legal,
+CMP00165,AGENT-008,VF-001033,2026-03-10,Identity Theft,Low,Resolved,21.0
+CMP00166,VF-004931,VF-000263,2026-02-14,Unauthorized Balance Deduction,critical,Resolved,12.0
+CMP00167,VF-000014,VF-003510,2026-02-10,Fraud Report,MEDIUM,Rejected,
+CMP00168,AGENT-026,VF-002167,2026-01-09,Unknown Calls,Medium,Transferred to Legal,
+CMP00169,AGENT-033,VF-001324,2026-03-29,Unauthorized Balance Deduction,HIGH,,
+CMP00170,VF-002760,VF-002170,2026-01-21,Billing Issue,Critical,Rejected,
+CMP00171,VF-001318,VF-000460,2026-02-03,Fake Collection Service,low,Resolved,9.0
+CMP00172,VF-000882,VF-004376,2026-01-02,Unauthorized Balance Deduction,Critical,Resolved,26.0
+CMP00173,VF-003001,VF-001938,2026-02-17,Unauthorized Balance Deduction,MEDIUM,Rejected,
+CMP00174,VF-003414,VF-003680,2026-02-23,Fraud Report,critical,Transferred to Legal,
+CMP00175,AGENT-020,VF-000570,2026-02-05,Spam Messages,low,Transferred to Legal,
+CMP00176,AGENT-031,VF-002167,2026-03-25,Billing Issue,MEDIUM,Transferred to Legal,
+CMP00177,VF-001612,VF-000840,2026-03-07,Billing Issue,Low,Under Review,
+CMP00178,VF-002025,VF-000088,2026-03-24,Billing Issue,Critical,Rejected,
+CMP00179,VF-001662,VF-001099,2026-02-11,Billing Issue,Medium,Transferred to Legal,
+CMP00180,VF-000352,VF-000108,2026-01-07,Spam Messages,Medium,,
+CMP00181,AGENT-019,VF-002963,2026-03-22,Unauthorized Balance Deduction,Critical,Under Review,
+CMP00182,AGENT-002,VF-002258,2026-02-24,Unknown Calls,HIGH,,
+CMP00183,AGENT-007,VF-002147,2026-02-08,Spam Messages,MEDIUM,,
+CMP00184,VF-004549,VF-003064,2026-01-10,Fraud Report,HIGH,Rejected,
+CMP00185,VF-000620,VF-000872,2026-01-08,Fake Collection Service,MEDIUM,Resolved,8.0
+CMP00186,AGENT-039,VF-002402,2026-03-29,Spam Messages,MEDIUM,,
+CMP00187,VF-001340,VF-001720,2026-03-07,Identity Theft,med,Transferred to Legal,
+CMP00188,VF-000524,VF-004376,2026-02-23,Spam Messages,critical,,
+CMP00189,VF-004048,VF-003717,2026-02-10,Identity Theft,med,Resolved,18.0
+CMP00190,AGENT-014,VF-001296,2026-03-19,Fake Collection Service,Medium,Rejected,
+CMP00191,AGENT-018,VF-004258,2026-02-12,Billing Issue,med,Under Review,
+CMP00192,VF-003691,VF-003254,2026-02-06,Unknown Calls,critical,Transferred to Legal,
+CMP00193,VF-001906,VF-004465,2026-02-11,Fake Collection Service,critical,Under Review,
+CMP00194,AGENT-035,VF-001253,2026-01-09,Unauthorized Balance Deduction,Medium,Resolved,4.0
+CMP00195,VF-000306,VF-001464,2026-02-22,Fake Collection Service,critical,,
+CMP00196,AGENT-036,VF-001042,2026-01-15,Billing Issue,MEDIUM,Resolved,9.0
+CMP00197,VF-004672,VF-002254,2026-03-06,Spam Messages,MEDIUM,Transferred to Legal,
+CMP00198,VF-003077,VF-001630,2026-03-20,Unknown Calls,low,Rejected,
+CMP00199,VF-000697,VF-001877,2026-02-09,Billing Issue,low,,
+CMP00200,VF-001630,VF-002402,2026-01-14,Fraud Report,Medium,Transferred to Legal,
+CMP00201,VF-004991,VF-001181,2026-02-05,Fake Collection Service,Critical,Rejected,
+CMP00202,VF-003432,VF-002194,2026-01-16,Unknown Calls,Medium,Transferred to Legal,
+CMP00203,AGENT-011,VF-004807,2026-01-01,Fake Collection Service,MEDIUM,Resolved,7.0
+CMP00204,VF-003360,VF-004416,2026-02-18,Unauthorized Balance Deduction,High,Rejected,
+CMP00205,VF-001904,VF-003127,2026-02-15,Fraud Report,Medium,Rejected,
+CMP00206,VF-004645,VF-002186,2026-01-13,Billing Issue,MEDIUM,,
+CMP00207,VF-002363,VF-001524,2026-02-05,Unauthorized Balance Deduction,HIGH,Resolved,1.0
+CMP00208,VF-004947,VF-001661,2026-02-24,Fake Collection Service,MEDIUM,Under Review,
+CMP00209,VF-000516,VF-001402,2026-02-13,Billing Issue,High,Transferred to Legal,
+CMP00210,AGENT-026,VF-003099,2026-02-01,Identity Theft,Critical,Under Review,
+CMP00211,AGENT-040,VF-000713,2026-02-27,Billing Issue,HIGH,Rejected,
+CMP00212,VF-002926,VF-004912,2026-01-20,Fraud Report,Critical,Rejected,
+CMP00213,VF-004044,VF-000386,2026-02-02,Spam Messages,Low,,
+CMP00214,AGENT-029,VF-001908,2026-02-18,Billing Issue,med,Rejected,
+CMP00215,AGENT-048,VF-004599,2026-02-19,Unauthorized Balance Deduction,med,,
+CMP00216,VF-000166,VF-001407,2026-01-15,Spam Messages,MEDIUM,Transferred to Legal,
+CMP00217,VF-001826,VF-003717,2026-02-21,Identity Theft,critical,Transferred to Legal,
+CMP00218,AGENT-008,VF-001214,2026-01-04,Identity Theft,low,,
+CMP00219,AGENT-032,VF-003649,2026-02-12,Unknown Calls,low,Rejected,
+CMP00220,VF-004363,VF-004890,2026-03-10,Unknown Calls,MEDIUM,Transferred to Legal,
+CMP00221,AGENT-001,VF-003419,2026-03-31,Unknown Calls,High,Resolved,30.0
+CMP00222,VF-002419,VF-001797,2026-03-27,Spam Messages,Medium,Under Review,
+CMP00223,AGENT-021,VF-003517,2026-03-16,Fake Collection Service,critical,Transferred to Legal,
+CMP00224,VF-000775,VF-000061,2026-02-21,Identity Theft,HIGH,Rejected,
+CMP00225,VF-004733,VF-001402,2026-03-21,Fake Collection Service,Low,Resolved,22.0
+CMP00226,AGENT-025,VF-004445,2026-02-17,Unknown Calls,Medium,Under Review,
+CMP00227,AGENT-016,VF-001538,2026-02-25,Fake Collection Service,Medium,Resolved,14.0
+CMP00228,VF-000329,VF-002500,2026-01-26,Fraud Report,High,Transferred to Legal,
+CMP00229,VF-002604,VF-000062,2026-03-31,Unknown Calls,Medium,,
+CMP00230,VF-001262,VF-001526,2026-03-08,Unknown Calls,Critical,Rejected,
+CMP00231,VF-004872,VF-002254,2026-03-11,Fake Collection Service,critical,Transferred to Legal,
+CMP00232,VF-004131,VF-000913,2026-02-19,Fraud Report,med,,
+CMP00233,VF-004874,VF-003151,2026-01-03,Billing Issue,low,Resolved,10.0
+CMP00234,VF-002823,VF-004335,2026-03-13,Fraud Report,Medium,Rejected,
+CMP00235,AGENT-029,VF-004623,2026-02-21,Fake Collection Service,High,Resolved,30.0
+CMP00236,AGENT-035,VF-004599,2026-03-16,Spam Messages,High,Under Review,
+CMP00237,AGENT-011,VF-004946,2026-01-21,Unknown Calls,Medium,Rejected,
+CMP00238,AGENT-020,VF-001800,2026-01-21,Unauthorized Balance Deduction,Critical,Resolved,29.0
+CMP00239,AGENT-036,VF-004090,2026-03-14,Fake Collection Service,low,Under Review,
+CMP00240,VF-002879,VF-002194,2026-01-27,Fraud Report,med,Under Review,
+CMP00241,VF-001516,VF-004436,2026-02-27,Unknown Calls,Low,,
+CMP00242,AGENT-037,VF-001290,2026-03-14,Unknown Calls,High,Resolved,30.0
+CMP00243,AGENT-003,VF-000745,2026-03-19,Identity Theft,Low,,
+CMP00244,VF-003087,VF-001378,2026-01-25,Spam Messages,High,Transferred to Legal,
+CMP00245,VF-004719,VF-002585,2026-01-26,Fraud Report,Low,Resolved,18.0
+CMP00246,VF-001481,VF-001906,2026-01-15,Fake Collection Service,Medium,Rejected,
+CMP00247,AGENT-037,VF-001274,2026-01-12,Unauthorized Balance Deduction,High,Rejected,
+CMP00248,VF-003748,VF-003902,2026-01-06,Fake Collection Service,Critical,Transferred to Legal,
+CMP00249,AGENT-042,VF-002021,2026-01-20,Fraud Report,High,Transferred to Legal,
+CMP00250,AGENT-034,VF-000485,2026-01-27,Unknown Calls,critical,Rejected,
+CMP00251,AGENT-042,VF-000941,2026-03-14,Unknown Calls,Critical,Rejected,
+CMP00252,AGENT-012,VF-001333,2026-02-23,Unauthorized Balance Deduction,med,Resolved,16.0
+CMP00253,AGENT-012,VF-000263,2026-01-18,Fake Collection Service,MEDIUM,,
+CMP00254,VF-000236,VF-000027,2026-03-31,Spam Messages,HIGH,Under Review,
+CMP00255,VF-003796,VF-002260,2026-02-26,Spam Messages,Critical,Rejected,
+CMP00256,AGENT-003,VF-002578,2026-03-20,Unauthorized Balance Deduction,MEDIUM,Rejected,
+CMP00257,AGENT-020,VF-004683,2026-02-23,Unauthorized Balance Deduction,critical,Resolved,8.0
+CMP00258,VF-001888,VF-004152,2026-01-01,Spam Messages,Medium,Resolved,13.0
+CMP00259,AGENT-016,VF-004915,2026-02-17,Fake Collection Service,low,Rejected,
+CMP00260,AGENT-001,VF-004563,2026-02-17,Unknown Calls,Medium,Resolved,29.0
+CMP00261,VF-004277,VF-004566,2026-02-28,Identity Theft,Critical,Rejected,
+CMP00262,AGENT-029,VF-004750,2026-03-29,Spam Messages,Low,Rejected,
+CMP00263,AGENT-018,VF-000386,2026-03-10,Fake Collection Service,critical,Rejected,
+CMP00264,VF-001147,VF-001630,2026-03-17,Spam Messages,low,Resolved,8.0
+CMP00265,AGENT-006,VF-001524,2026-02-25,Spam Messages,critical,Rejected,
+CMP00266,VF-004471,VF-004380,2026-01-29,Fraud Report,med,Under Review,
+CMP00267,VF-002997,VF-002989,2026-03-12,Billing Issue,low,Transferred to Legal,
+CMP00268,AGENT-020,VF-000899,2026-02-28,Spam Messages,High,Rejected,
+CMP00269,AGENT-040,VF-004345,2026-01-31,Fraud Report,HIGH,Under Review,
+CMP00270,AGENT-018,VF-002788,2026-02-20,Fake Collection Service,Medium,Resolved,9.0
+CMP00271,VF-004612,VF-001333,2026-02-04,Spam Messages,High,Under Review,
+CMP00272,VF-003789,VF-003891,2026-01-11,Identity Theft,Medium,,
+CMP00273,VF-002878,VF-003127,2026-02-23,Unknown Calls,High,Under Review,
+CMP00274,AGENT-041,VF-002466,2026-02-28,Unknown Calls,low,Under Review,
+CMP00275,VF-002322,VF-001705,2026-03-03,Spam Messages,Critical,Resolved,19.0
+CMP00276,AGENT-003,VF-000459,2026-02-23,Billing Issue,High,Under Review,
+CMP00277,AGENT-043,VF-002712,2026-01-21,Identity Theft,critical,Transferred to Legal,
+CMP00278,VF-003266,VF-004678,2026-03-18,Fraud Report,HIGH,Rejected,
+CMP00279,VF-003352,VF-002788,2026-02-04,Spam Messages,Critical,Resolved,14.0
+CMP00280,VF-001777,VF-004310,2026-03-10,Spam Messages,High,Under Review,
+CMP00281,VF-002474,VF-000899,2026-01-27,Unknown Calls,High,Under Review,
+CMP00282,AGENT-011,VF-003077,2026-02-23,Fraud Report,low,Resolved,13.0
+CMP00283,VF-001663,VF-004544,2026-03-06,Fake Collection Service,Medium,Transferred to Legal,
+CMP00284,VF-004953,VF-000181,2026-03-01,Spam Messages,Critical,,
+CMP00285,VF-002531,VF-001408,2026-01-01,Fake Collection Service,critical,Under Review,
+CMP00286,VF-001531,VF-004468,2026-01-27,Identity Theft,low,Rejected,
+CMP00287,VF-000705,VF-002204,2026-01-21,Fraud Report,Medium,Under Review,
+CMP00288,VF-002173,VF-003466,2026-03-22,Fake Collection Service,Critical,Under Review,
+CMP00289,VF-002804,VF-002552,2026-03-29,Fraud Report,critical,,
+CMP00290,VF-002870,VF-004345,2026-03-24,Billing Issue,Critical,Under Review,
+CMP00291,AGENT-013,VF-001311,2026-02-28,Unauthorized Balance Deduction,Medium,Rejected,
+CMP00292,VF-001792,VF-001274,2026-03-23,Spam Messages,MEDIUM,Rejected,
+CMP00293,VF-000912,VF-000538,2026-03-21,Unknown Calls,Critical,,
+CMP00294,VF-004818,VF-004794,2026-01-01,Identity Theft,med,Transferred to Legal,
+CMP00295,AGENT-007,VF-004252,2026-02-13,Billing Issue,med,Under Review,
+CMP00296,AGENT-017,VF-001867,2026-03-19,Identity Theft,HIGH,Transferred to Legal,
+CMP00297,AGENT-022,VF-001806,2026-01-07,Spam Messages,Critical,Resolved,14.0
+CMP00298,AGENT-025,VF-002186,2026-02-26,Spam Messages,Critical,Resolved,8.0
+CMP00299,AGENT-014,VF-002956,2026-02-19,Unknown Calls,med,Resolved,11.0
+CMP00300,VF-000586,VF-002254,2026-03-18,Fake Collection Service,Medium,Rejected,
+CMP00301,VF-003390,VF-003533,2026-01-09,Fraud Report,MEDIUM,,
+CMP00302,VF-002708,VF-000914,2026-03-14,Billing Issue,Low,Resolved,25.0
+CMP00303,VF-001056,VF-000940,2026-01-16,Fake Collection Service,med,Resolved,2.0
+CMP00304,VF-000092,VF-000459,2026-03-20,Unauthorized Balance Deduction,low,Transferred to Legal,
+CMP00305,AGENT-036,VF-004250,2026-02-22,Spam Messages,Medium,Transferred to Legal,
+CMP00306,AGENT-014,VF-000789,2026-02-11,Billing Issue,Medium,Resolved,4.0
+CMP00307,VF-001422,VF-001464,2026-03-20,Billing Issue,med,,
+CMP00308,AGENT-030,VF-003518,2026-03-29,Spam Messages,HIGH,Transferred to Legal,
+CMP00309,VF-002560,VF-004599,2026-03-09,Fraud Report,Critical,Rejected,
+CMP00310,VF-004758,VF-002805,2026-01-17,Fraud Report,HIGH,,
+CMP00311,AGENT-046,VF-001908,2026-03-05,Spam Messages,Critical,Resolved,19.0
+CMP00312,AGENT-008,VF-002188,2026-02-14,Billing Issue,low,Transferred to Legal,
+CMP00313,AGENT-007,VF-001714,2026-01-29,Fraud Report,Low,Under Review,
+CMP00314,VF-000042,VF-003473,2026-02-08,Unknown Calls,Critical,Rejected,
+CMP00315,VF-000248,VF-003625,2026-03-06,Fake Collection Service,Low,Under Review,
+CMP00316,AGENT-024,VF-002578,2026-03-08,Fake Collection Service,med,,
+CMP00317,VF-003424,VF-003127,2026-01-29,Spam Messages,Low,Resolved,1.0
+CMP00318,VF-000645,VF-004369,2026-01-17,Identity Theft,HIGH,Under Review,
+CMP00319,VF-001926,VF-000745,2026-01-22,Identity Theft,HIGH,Rejected,
+CMP00320,AGENT-048,VF-003015,2026-01-26,Fake Collection Service,critical,Resolved,11.0
+CMP00321,AGENT-009,VF-004115,2026-01-29,Fake Collection Service,critical,Resolved,2.0
+CMP00322,AGENT-008,VF-003114,2026-01-23,Unauthorized Balance Deduction,MEDIUM,Rejected,
+CMP00323,VF-002956,VF-004828,2026-03-07,Fraud Report,Low,Transferred to Legal,
+CMP00324,AGENT-049,VF-003433,2026-01-08,Fake Collection Service,Low,Rejected,
+CMP00325,VF-001568,VF-000566,2026-03-03,Unknown Calls,Critical,Rejected,
+CMP00326,AGENT-046,VF-003724,2026-03-22,Billing Issue,High,Resolved,10.0
+CMP00327,VF-000424,VF-003617,2026-01-11,Unauthorized Balance Deduction,Critical,Resolved,11.0
+CMP00328,AGENT-033,VF-002278,2026-02-03,Billing Issue,Critical,,
+CMP00329,VF-002707,VF-004465,2026-02-02,Unknown Calls,HIGH,Resolved,3.0
+CMP00330,VF-004859,VF-004886,2026-01-29,Fake Collection Service,MEDIUM,,
+CMP00331,VF-000609,VF-003787,2026-03-12,Unknown Calls,HIGH,Rejected,
+CMP00332,VF-001544,VF-004676,2026-03-04,Spam Messages,Medium,,
+CMP00333,AGENT-043,VF-000296,2026-03-21,Fake Collection Service,HIGH,,
+CMP00334,AGENT-011,VF-004386,2026-02-24,Spam Messages,med,Resolved,29.0
+CMP00335,AGENT-026,VF-004708,2026-02-05,Unauthorized Balance Deduction,critical,Transferred to Legal,
+CMP00336,VF-001744,VF-001717,2026-03-29,Fraud Report,Low,,
+CMP00337,VF-001762,VF-003659,2026-03-28,Billing Issue,Medium,,
+CMP00338,AGENT-002,VF-002053,2026-01-09,Fake Collection Service,Critical,Transferred to Legal,
+CMP00339,AGENT-044,VF-003272,2026-02-16,Spam Messages,Low,Rejected,
+CMP00340,VF-002528,VF-000872,2026-03-24,Spam Messages,HIGH,Under Review,
+CMP00341,VF-003102,VF-004361,2026-03-25,Billing Issue,HIGH,Under Review,
+CMP00342,VF-000577,VF-004530,2026-03-18,Spam Messages,Low,Transferred to Legal,
+CMP00343,VF-002664,VF-003877,2026-03-30,Unauthorized Balance Deduction,low,Rejected,
+CMP00344,AGENT-014,VF-001795,2026-02-16,Billing Issue,med,,
+CMP00345,AGENT-016,VF-000713,2026-01-15,Unknown Calls,critical,Under Review,
+CMP00346,AGENT-037,VF-004159,2026-03-18,Unauthorized Balance Deduction,Critical,Resolved,12.0
+CMP00347,VF-004812,VF-002788,2026-02-14,Unknown Calls,MEDIUM,Resolved,13.0
+CMP00348,AGENT-035,VF-001877,2026-03-18,Unknown Calls,HIGH,Under Review,
+CMP00349,AGENT-016,VF-002578,2026-02-27,Fraud Report,critical,Under Review,
+CMP00350,AGENT-025,VF-001254,2026-03-14,Fraud Report,med,Rejected,
+CMP00351,AGENT-027,VF-002989,2026-01-25,Fake Collection Service,High,Rejected,
+CMP00352,AGENT-026,VF-000147,2026-02-17,Unknown Calls,HIGH,,
+CMP00353,VF-003090,VF-003114,2026-03-13,Fake Collection Service,High,,
+CMP00354,AGENT-041,VF-002941,2026-01-19,Fraud Report,High,Resolved,18.0
+CMP00355,AGENT-031,VF-004376,2026-02-25,Spam Messages,low,,
+CMP00356,VF-003962,VF-001053,2026-01-20,Fake Collection Service,critical,Under Review,
+CMP00357,AGENT-008,VF-000750,2026-01-30,Spam Messages,High,Rejected,
+CMP00358,VF-003144,VF-002027,2026-03-18,Fake Collection Service,critical,Resolved,1.0
+CMP00359,VF-000835,VF-000205,2026-03-28,Fake Collection Service,High,Rejected,
+CMP00360,AGENT-002,VF-003457,2026-01-07,Unknown Calls,low,Resolved,15.0
+CMP00361,VF-004592,VF-003928,2026-03-08,Fraud Report,Critical,Resolved,29.0
+CMP00362,AGENT-008,VF-003287,2026-02-15,Unknown Calls,med,Transferred to Legal,
+CMP00363,AGENT-014,VF-003022,2026-03-23,Unauthorized Balance Deduction,HIGH,Under Review,
+CMP00364,VF-004815,VF-002277,2026-03-16,Unknown Calls,med,Resolved,22.0
+CMP00365,AGENT-019,VF-003127,2026-03-04,Unauthorized Balance Deduction,HIGH,Resolved,6.0
+CMP00366,AGENT-038,VF-003062,2026-02-17,Unauthorized Balance Deduction,Critical,,
+CMP00367,VF-000055,VF-001630,2026-01-03,Identity Theft,MEDIUM,Transferred to Legal,
+CMP00368,AGENT-004,VF-000846,2026-02-07,Spam Messages,Low,Transferred to Legal,
+CMP00369,VF-004767,VF-000872,2026-02-26,Spam Messages,low,Transferred to Legal,
+CMP00370,VF-001562,VF-003229,2026-01-10,Unknown Calls,Medium,,
+CMP00371,AGENT-039,VF-004178,2026-03-18,Spam Messages,low,,
+CMP00372,VF-000720,VF-001134,2026-03-29,Unauthorized Balance Deduction,Low,Resolved,2.0
+CMP00373,VF-001605,VF-000245,2026-03-18,Fake Collection Service,Low,Rejected,
+CMP00374,AGENT-041,VF-004235,2026-01-22,Billing Issue,med,Transferred to Legal,
+CMP00375,AGENT-028,VF-004347,2026-02-08,Billing Issue,HIGH,Resolved,21.0
+CMP00376,VF-004896,VF-002786,2026-01-12,Unauthorized Balance Deduction,Low,,
+CMP00377,VF-004473,VF-001829,2026-02-25,Billing Issue,med,Rejected,
+CMP00378,VF-001402,VF-000669,2026-02-20,Fraud Report,low,,
+CMP00379,VF-004402,VF-000171,2026-02-04,Billing Issue,med,Transferred to Legal,
+CMP00380,VF-002487,VF-001311,2026-02-01,Fraud Report,Critical,Under Review,
+CMP00381,AGENT-024,VF-003127,2026-02-11,Spam Messages,Medium,,
+CMP00382,VF-003031,VF-001024,2026-01-21,Billing Issue,HIGH,Under Review,
+CMP00383,VF-000667,VF-003191,2026-01-03,Fraud Report,Critical,Transferred to Legal,
+CMP00384,VF-000344,VF-002989,2026-01-04,Fake Collection Service,Critical,Rejected,
+CMP00385,VF-003781,VF-003744,2026-02-07,Unauthorized Balance Deduction,MEDIUM,Resolved,16.0
+CMP00386,VF-002787,VF-000844,2026-02-21,Unknown Calls,Low,Rejected,
+CMP00387,VF-003530,VF-003090,2026-03-08,Spam Messages,High,Transferred to Legal,
+CMP00388,AGENT-026,VF-001284,2026-03-13,Unknown Calls,MEDIUM,Rejected,
+CMP00389,VF-003244,VF-000745,2026-01-30,Unknown Calls,critical,Transferred to Legal,
+CMP00390,VF-000429,VF-002369,2026-02-26,Unauthorized Balance Deduction,MEDIUM,,
+CMP00391,VF-002197,VF-002657,2026-02-26,Fake Collection Service,Medium,Transferred to Legal,
+CMP00392,VF-004750,VF-003064,2026-02-15,Spam Messages,Low,Rejected,
+CMP00393,VF-000108,VF-001717,2026-02-08,Unauthorized Balance Deduction,Low,Resolved,4.0
+CMP00394,AGENT-050,VF-000614,2026-01-08,Unauthorized Balance Deduction,HIGH,Resolved,14.0
+CMP00395,VF-003056,VF-001906,2026-01-03,Fraud Report,critical,,
+CMP00396,VF-001226,VF-003052,2026-01-03,Fake Collection Service,Medium,Resolved,18.0
+CMP00397,VF-003216,VF-001254,2026-01-27,Fake Collection Service,High,Resolved,17.0
+CMP00398,VF-002448,VF-002153,2026-03-30,Unknown Calls,High,Under Review,
+CMP00399,VF-002178,VF-002304,2026-03-05,Unknown Calls,low,Under Review,
+CMP00400,VF-004805,VF-001895,2026-03-31,Spam Messages,High,,
+CMP00401,AGENT-027,VF-003287,2026-02-04,Spam Messages,critical,Resolved,6.0
+CMP00402,AGENT-045,VF-001023,2026-01-06,Fraud Report,med,Transferred to Legal,
+CMP00403,VF-002461,VF-002266,2026-01-17,Fake Collection Service,High,Transferred to Legal,
+CMP00404,VF-002587,VF-000041,2026-03-16,Fraud Report,Critical,Under Review,
+CMP00405,VF-000661,VF-000535,2026-03-04,Fake Collection Service,critical,,
+CMP00406,VF-002427,VF-003365,2026-02-01,Billing Issue,Medium,Under Review,
+CMP00407,VF-003183,VF-003242,2026-02-10,Spam Messages,MEDIUM,,
+CMP00408,VF-004635,VF-001630,2026-01-03,Unauthorized Balance Deduction,med,Transferred to Legal,
+CMP00409,AGENT-028,VF-003109,2026-02-24,Billing Issue,Critical,Under Review,
+CMP00410,AGENT-007,VF-000992,2026-01-26,Spam Messages,low,,
+CMP00411,VF-002696,VF-003709,2026-01-20,Identity Theft,High,,
+CMP00412,AGENT-040,VF-000462,2026-01-16,Unknown Calls,HIGH,Under Review,
+CMP00413,VF-003502,VF-001614,2026-01-20,Identity Theft,critical,Transferred to Legal,
+CMP00414,VF-000808,VF-000793,2026-02-27,Billing Issue,low,Resolved,8.0
+CMP00415,AGENT-047,VF-002941,2026-03-05,Unauthorized Balance Deduction,Medium,Transferred to Legal,
+CMP00416,VF-004725,VF-002963,2026-03-18,Unknown Calls,Low,Transferred to Legal,
+CMP00417,VF-000449,VF-002011,2026-01-02,Fake Collection Service,low,Resolved,3.0
+CMP00418,VF-003542,VF-000793,2026-01-08,Fake Collection Service,Medium,Resolved,2.0
+CMP00419,AGENT-048,VF-001072,2026-02-14,Identity Theft,critical,,
+CMP00420,VF-002026,VF-000263,2026-01-23,Unauthorized Balance Deduction,High,Resolved,25.0
+CMP00421,AGENT-021,VF-003109,2026-01-06,Spam Messages,MEDIUM,Rejected,
+CMP00422,AGENT-024,VF-002212,2026-01-14,Identity Theft,Low,Rejected,
+CMP00423,AGENT-008,VF-001664,2026-01-22,Fake Collection Service,Low,Resolved,15.0
+CMP00424,AGENT-050,VF-000838,2026-01-18,Spam Messages,Low,Resolved,28.0
+CMP00425,AGENT-008,VF-004468,2026-01-21,Fake Collection Service,Medium,Transferred to Legal,
+CMP00426,AGENT-015,VF-002657,2026-03-28,Identity Theft,Medium,Under Review,
+CMP00427,VF-004195,VF-000261,2026-03-15,Identity Theft,low,,
+CMP00428,VF-002374,VF-001032,2026-03-20,Identity Theft,High,,
+CMP00429,VF-003699,VF-002911,2026-01-18,Identity Theft,MEDIUM,Under Review,
+CMP00430,AGENT-048,VF-004789,2026-01-04,Billing Issue,Medium,Under Review,
+CMP00431,AGENT-012,VF-001800,2026-03-16,Fake Collection Service,Critical,Rejected,
+CMP00432,AGENT-050,VF-000600,2026-03-10,Unauthorized Balance Deduction,Critical,Transferred to Legal,
+CMP00433,VF-003919,VF-003604,2026-02-04,Fraud Report,low,,
+CMP00434,VF-003051,VF-000058,2026-01-13,Fraud Report,Medium,Resolved,15.0
+CMP00435,VF-004832,VF-002707,2026-02-05,Unknown Calls,Critical,Rejected,
+CMP00436,VF-001966,VF-001142,2026-01-15,Unknown Calls,critical,Rejected,
+CMP00437,VF-002776,VF-003562,2026-01-11,Fraud Report,Critical,Rejected,
+CMP00438,AGENT-038,VF-003640,2026-01-03,Billing Issue,low,Rejected,
+CMP00439,VF-002667,VF-004946,2026-03-17,Unknown Calls,critical,Transferred to Legal,
+CMP00440,AGENT-002,VF-002445,2026-03-26,Unauthorized Balance Deduction,critical,Resolved,9.0
+CMP00441,AGENT-042,VF-004345,2026-01-06,Fraud Report,Medium,Rejected,
+CMP00442,VF-003126,VF-003715,2026-02-27,Unauthorized Balance Deduction,critical,Resolved,9.0
+CMP00443,AGENT-014,VF-000380,2026-02-23,Unauthorized Balance Deduction,low,,
+CMP00444,VF-000224,VF-002167,2026-01-12,Fraud Report,High,,
+CMP00445,AGENT-007,VF-000125,2026-01-29,Fake Collection Service,Critical,,
+CMP00446,AGENT-046,VF-001622,2026-02-09,Spam Messages,Medium,Rejected,
+CMP00447,AGENT-022,VF-000459,2026-02-04,Fake Collection Service,med,,
+CMP00448,VF-000471,VF-004795,2026-03-19,Unknown Calls,Critical,Rejected,
+CMP00449,AGENT-021,VF-000113,2026-01-15,Unauthorized Balance Deduction,Medium,Under Review,
+CMP00450,VF-001841,VF-002657,2026-01-01,Identity Theft,med,,
+CMP00451,AGENT-001,VF-000929,2026-02-17,Fraud Report,Critical,Transferred to Legal,
+CMP00452,AGENT-010,VF-002445,2026-01-05,Unauthorized Balance Deduction,critical,Transferred to Legal,
+CMP00453,VF-003304,VF-000327,2026-02-24,Identity Theft,critical,,
+CMP00454,AGENT-011,VF-004413,2026-01-03,Billing Issue,HIGH,Transferred to Legal,
+CMP00455,VF-002318,VF-000838,2026-03-06,Fake Collection Service,Critical,Transferred to Legal,
+CMP00456,VF-004549,VF-002780,2026-02-23,Fake Collection Service,Critical,Resolved,18.0
+CMP00457,AGENT-021,VF-002007,2026-02-16,Identity Theft,med,Resolved,1.0
+CMP00458,VF-004856,VF-003520,2026-01-19,Fake Collection Service,Medium,Rejected,
+CMP00459,AGENT-038,VF-004419,2026-02-04,Spam Messages,HIGH,Under Review,
+CMP00460,AGENT-024,VF-000939,2026-03-23,Unauthorized Balance Deduction,High,Under Review,
+CMP00461,VF-001347,VF-004868,2026-01-04,Identity Theft,MEDIUM,Resolved,25.0
+CMP00462,AGENT-001,VF-003918,2026-01-25,Identity Theft,med,Transferred to Legal,
+CMP00463,VF-000673,VF-000054,2026-03-20,Unknown Calls,High,,
+CMP00464,AGENT-028,VF-000913,2026-02-08,Unauthorized Balance Deduction,Critical,Rejected,
+CMP00465,VF-002610,VF-002077,2026-03-15,Identity Theft,low,Resolved,13.0
+CMP00466,AGENT-021,VF-003134,2026-02-09,Identity Theft,critical,Transferred to Legal,
+CMP00467,AGENT-022,VF-002788,2026-02-10,Fake Collection Service,Medium,Rejected,
+CMP00468,VF-003705,VF-001116,2026-01-27,Unknown Calls,Medium,,
+CMP00469,VF-003952,VF-000376,2026-01-25,Unknown Calls,med,Resolved,2.0
+CMP00470,VF-003129,VF-004946,2026-03-10,Billing Issue,med,Resolved,19.0
+CMP00471,AGENT-005,VF-000971,2026-03-20,Unknown Calls,Medium,Resolved,7.0
+CMP00472,AGENT-006,VF-001806,2026-02-13,Identity Theft,HIGH,Resolved,26.0
+CMP00473,AGENT-031,VF-002551,2026-01-05,Spam Messages,Low,Resolved,26.0
+CMP00474,VF-004022,VF-000261,2026-01-08,Fake Collection Service,Low,Under Review,
+CMP00475,VF-004727,VF-004758,2026-03-28,Fake Collection Service,low,Resolved,26.0
+CMP00476,VF-003665,VF-004904,2026-03-13,Billing Issue,Low,Rejected,
+CMP00477,VF-002725,VF-000663,2026-01-31,Billing Issue,critical,Transferred to Legal,
+CMP00478,AGENT-019,VF-001019,2026-03-11,Fake Collection Service,low,Under Review,
+CMP00479,AGENT-036,VF-000220,2026-03-19,Fraud Report,High,Under Review,
+CMP00480,VF-003990,VF-000419,2026-01-03,Unauthorized Balance Deduction,low,Under Review,
+CMP00481,VF-001065,VF-002891,2026-02-08,Fake Collection Service,High,Under Review,
+CMP00482,VF-002197,VF-002348,2026-02-17,Unauthorized Balance Deduction,HIGH,Rejected,
+CMP00483,VF-002477,VF-000161,2026-01-16,Spam Messages,High,,
+CMP00484,AGENT-016,VF-000939,2026-01-21,Unknown Calls,med,Resolved,9.0
+CMP00485,AGENT-016,VF-003207,2026-02-13,Identity Theft,Medium,Rejected,
+CMP00486,AGENT-040,VF-000218,2026-03-05,Spam Messages,MEDIUM,,
+CMP00487,VF-004311,VF-003129,2026-03-12,Identity Theft,med,Under Review,
+CMP00488,VF-000271,VF-002966,2026-03-09,Unauthorized Balance Deduction,High,Resolved,6.0
+CMP00489,VF-001033,VF-001797,2026-03-21,Identity Theft,med,Under Review,
+CMP00490,VF-004973,VF-000621,2026-03-26,Billing Issue,med,Resolved,8.0
+CMP00491,VF-002245,VF-002220,2026-01-04,Spam Messages,MEDIUM,Under Review,
+CMP00492,VF-004772,VF-001629,2026-02-25,Unauthorized Balance Deduction,Critical,Rejected,
+CMP00493,AGENT-003,VF-000291,2026-01-03,Spam Messages,Critical,Rejected,
+CMP00494,VF-000130,VF-000586,2026-01-17,Fake Collection Service,MEDIUM,Under Review,
+CMP00495,VF-000124,VF-002963,2026-03-19,Unauthorized Balance Deduction,low,Transferred to Legal,
+CMP00496,VF-002937,VF-000838,2026-02-09,Spam Messages,High,Transferred to Legal,
+CMP00497,VF-003919,VF-003296,2026-02-08,Billing Issue,low,,
+CMP00498,AGENT-011,VF-000561,2026-03-16,Unknown Calls,High,Transferred to Legal,
+CMP00499,AGENT-009,VF-004565,2026-02-22,Unauthorized Balance Deduction,med,Transferred to Legal,
+CMP00500,AGENT-003,VF-003594,2026-03-31,Fake Collection Service,med,Resolved,25.0
+CMP00501,VF-004895,VF-004090,2026-03-11,Identity Theft,High,Resolved,6.0
+CMP00502,VF-002851,VF-000760,2026-03-31,Spam Messages,High,Resolved,30.0
+CMP00503,VF-000136,VF-002050,2026-01-20,Identity Theft,critical,Rejected,
+CMP00504,AGENT-039,VF-003153,2026-01-18,Unknown Calls,MEDIUM,Resolved,16.0
+CMP00505,VF-001804,VF-001639,2026-03-11,Unauthorized Balance Deduction,MEDIUM,Under Review,
+CMP00506,AGENT-046,VF-003510,2026-03-17,Identity Theft,med,Under Review,
+CMP00507,VF-001169,VF-004240,2026-02-07,Fraud Report,HIGH,Resolved,20.0
+CMP00508,VF-004686,VF-001074,2026-01-29,Fraud Report,HIGH,,
+CMP00509,VF-004335,VF-001273,2026-02-13,Spam Messages,HIGH,Rejected,
+CMP00510,VF-000802,VF-002170,2026-02-16,Identity Theft,High,Transferred to Legal,
+CMP00511,VF-002072,VF-004789,2026-02-03,Identity Theft,HIGH,Transferred to Legal,
+CMP00512,VF-000712,VF-000654,2026-01-19,Fake Collection Service,Critical,Resolved,1.0
+CMP00513,VF-001421,VF-004463,2026-03-21,Identity Theft,med,Resolved,2.0
+CMP00514,VF-001210,VF-002279,2026-02-07,Unauthorized Balance Deduction,MEDIUM,Rejected,
+CMP00515,VF-003335,VF-000356,2026-02-14,Fake Collection Service,High,Under Review,
+CMP00516,VF-003295,VF-002299,2026-03-11,Spam Messages,Medium,Under Review,
+CMP00517,VF-002021,VF-004345,2026-01-18,Spam Messages,HIGH,Resolved,21.0
+CMP00518,VF-000148,VF-004598,2026-02-03,Fake Collection Service,Medium,,
+CMP00519,AGENT-018,VF-001520,2026-02-01,Billing Issue,low,Under Review,
+CMP00520,VF-002264,VF-002966,2026-03-03,Spam Messages,med,Rejected,
+CMP00521,AGENT-013,VF-000340,2026-03-07,Fraud Report,med,,
+CMP00522,VF-003333,VF-001037,2026-02-18,Unknown Calls,low,Resolved,28.0
+CMP00523,VF-003472,VF-001729,2026-02-28,Unknown Calls,HIGH,Rejected,
+CMP00524,VF-001298,VF-004204,2026-02-14,Unknown Calls,MEDIUM,,
+CMP00525,AGENT-030,VF-000914,2026-02-14,Billing Issue,Medium,Resolved,27.0
+CMP00526,AGENT-030,VF-001114,2026-03-25,Unauthorized Balance Deduction,HIGH,Resolved,17.0
+CMP00527,AGENT-028,VF-003272,2026-03-23,Unauthorized Balance Deduction,low,Transferred to Legal,
+CMP00528,VF-003458,VF-004376,2026-03-05,Fake Collection Service,critical,Transferred to Legal,
+CMP00529,AGENT-021,VF-004468,2026-03-27,Unauthorized Balance Deduction,low,,
+CMP00530,AGENT-003,VF-001834,2026-03-11,Spam Messages,MEDIUM,Resolved,23.0
+CMP00531,VF-004151,VF-004712,2026-03-20,Fraud Report,low,Rejected,
+CMP00532,AGENT-002,VF-003679,2026-01-27,Spam Messages,HIGH,Rejected,
+CMP00533,AGENT-043,VF-003759,2026-02-02,Spam Messages,Medium,Rejected,
+CMP00534,VF-003452,VF-001630,2026-03-14,Unauthorized Balance Deduction,med,Under Review,
+CMP00535,VF-002450,VF-004393,2026-03-21,Fraud Report,low,Resolved,17.0
+CMP00536,AGENT-020,VF-004731,2026-03-06,Identity Theft,med,Resolved,27.0
+CMP00537,AGENT-049,VF-002267,2026-02-10,Billing Issue,Critical,Transferred to Legal,
+CMP00538,VF-000218,VF-001343,2026-02-01,Unknown Calls,med,Transferred to Legal,
+CMP00539,VF-002305,VF-002038,2026-01-13,Unknown Calls,HIGH,Under Review,
+CMP00540,AGENT-012,VF-002751,2026-02-12,Fake Collection Service,MEDIUM,Resolved,19.0
+CMP00541,VF-004678,VF-001730,2026-03-05,Unknown Calls,MEDIUM,,
+CMP00542,VF-002921,VF-003764,2026-03-22,Unauthorized Balance Deduction,critical,Resolved,15.0
+CMP00543,VF-000212,VF-001775,2026-03-22,Unauthorized Balance Deduction,Medium,,
+CMP00544,VF-003002,VF-000514,2026-01-03,Unauthorized Balance Deduction,Critical,,
+CMP00545,VF-003001,VF-000261,2026-01-26,Spam Messages,HIGH,Resolved,21.0
+CMP00546,VF-002290,VF-002194,2026-03-29,Identity Theft,Medium,Resolved,21.0
+CMP00547,AGENT-016,VF-001023,2026-02-28,Spam Messages,Medium,Transferred to Legal,
+CMP00548,VF-001242,VF-000641,2026-03-29,Unknown Calls,critical,Under Review,
+CMP00549,AGENT-023,VF-003064,2026-02-11,Unknown Calls,Low,Under Review,
+CMP00550,AGENT-002,VF-000054,2026-02-22,Unauthorized Balance Deduction,critical,Transferred to Legal,
+CMP00551,AGENT-050,VF-000061,2026-02-09,Unknown Calls,HIGH,Transferred to Legal,
+CMP00552,AGENT-034,VF-002006,2026-03-25,Fraud Report,HIGH,Rejected,
+CMP00553,AGENT-007,VF-002402,2026-02-14,Unknown Calls,HIGH,Resolved,14.0
+CMP00554,AGENT-043,VF-002254,2026-01-27,Fake Collection Service,HIGH,Under Review,
+CMP00555,VF-002118,VF-003167,2026-02-20,Fraud Report,low,Under Review,
+CMP00556,AGENT-005,VF-004446,2026-02-25,Billing Issue,MEDIUM,,
+CMP00557,AGENT-043,VF-001867,2026-02-14,Identity Theft,High,Rejected,
+CMP00558,VF-001632,VF-002381,2026-01-14,Spam Messages,Medium,Resolved,29.0
+CMP00559,AGENT-048,VF-000745,2026-03-04,Identity Theft,med,Under Review,
+CMP00560,VF-002508,VF-004575,2026-01-10,Billing Issue,MEDIUM,Resolved,7.0
+CMP00561,VF-003168,VF-002172,2026-03-16,Fraud Report,low,Transferred to Legal,
+CMP00562,VF-003440,VF-003457,2026-01-21,Fake Collection Service,HIGH,Rejected,
+CMP00563,VF-002480,VF-002371,2026-03-02,Spam Messages,low,,
+CMP00564,VF-004045,VF-001729,2026-02-09,Fake Collection Service,Low,Resolved,12.0
+CMP00565,AGENT-030,VF-000745,2026-02-06,Spam Messages,Medium,Under Review,
+CMP00566,AGENT-048,VF-001195,2026-02-06,Unauthorized Balance Deduction,critical,Under Review,
+CMP00567,VF-002644,VF-004875,2026-01-09,Spam Messages,Critical,Rejected,
+CMP00568,VF-002991,VF-000205,2026-03-28,Fake Collection Service,low,Resolved,13.0
+CMP00569,AGENT-050,VF-001204,2026-01-13,Fake Collection Service,low,,
+CMP00570,VF-002722,VF-003457,2026-02-01,Fraud Report,Medium,,
+CMP00571,VF-002817,VF-001130,2026-02-13,Fraud Report,Critical,Rejected,
+CMP00572,AGENT-003,VF-002188,2026-01-15,Identity Theft,low,,
+CMP00573,VF-003400,VF-004828,2026-03-20,Unknown Calls,low,Under Review,
+CMP00574,VF-002064,VF-004730,2026-02-10,Fake Collection Service,med,Rejected,
+CMP00575,VF-001919,VF-004216,2026-01-14,Identity Theft,critical,Transferred to Legal,
+CMP00576,VF-000891,VF-004175,2026-01-30,Fraud Report,Critical,Transferred to Legal,
+CMP00577,VF-001337,VF-000888,2026-01-27,Fake Collection Service,Medium,Under Review,
+CMP00578,VF-001793,VF-001576,2026-02-04,Fraud Report,Critical,Resolved,8.0
+CMP00579,VF-003101,VF-000939,2026-02-15,Unauthorized Balance Deduction,HIGH,,
+CMP00580,VF-002881,VF-001725,2026-02-11,Fraud Report,critical,Under Review,
+CMP00581,AGENT-016,VF-000697,2026-03-04,Fraud Report,low,Resolved,28.0
+CMP00582,AGENT-028,VF-004847,2026-02-12,Billing Issue,Medium,Under Review,
+CMP00583,AGENT-011,VF-002181,2026-02-10,Unknown Calls,High,,
+CMP00584,VF-000367,VF-004140,2026-01-16,Unauthorized Balance Deduction,Medium,,
+CMP00585,VF-000148,VF-004216,2026-01-03,Identity Theft,Medium,Rejected,
+CMP00586,VF-004981,VF-001867,2026-01-01,Identity Theft,critical,,
+CMP00587,VF-002812,VF-004857,2026-02-02,Unauthorized Balance Deduction,low,Under Review,
+CMP00588,AGENT-018,VF-002186,2026-03-12,Identity Theft,Medium,Transferred to Legal,
+CMP00589,AGENT-020,VF-003199,2026-01-23,Spam Messages,med,Rejected,
+CMP00590,VF-002171,VF-002429,2026-03-14,Unauthorized Balance Deduction,critical,,
+CMP00591,VF-003684,VF-002375,2026-03-15,Unknown Calls,Medium,,
+CMP00592,AGENT-026,VF-002788,2026-01-25,Fake Collection Service,MEDIUM,Rejected,
+CMP00593,VF-002119,VF-004781,2026-02-13,Unknown Calls,Critical,Resolved,17.0
+CMP00594,VF-002393,VF-002170,2026-03-20,Unknown Calls,Critical,,
+CMP00595,VF-002983,VF-001908,2026-03-09,Unknown Calls,critical,Transferred to Legal,
+CMP00596,VF-001042,VF-000654,2026-03-07,Unknown Calls,med,,
+CMP00597,AGENT-008,VF-003562,2026-02-18,Fake Collection Service,med,Resolved,25.0
+CMP00598,AGENT-033,VF-002887,2026-02-07,Unknown Calls,Medium,Transferred to Legal,
+CMP00599,VF-001690,VF-000005,2026-02-02,Identity Theft,Medium,Rejected,
+CMP00600,AGENT-046,VF-002998,2026-03-19,Identity Theft,Medium,Rejected,

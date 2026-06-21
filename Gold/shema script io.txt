@@ -1,0 +1,95 @@
+Table dim_customer {
+  customer_key int [pk, increment]
+  customer_id varchar
+  full_name varchar
+  age int
+  credit_score int
+  age_group varchar
+  registration_date date
+  tenure_months int
+  is_current bit
+  effective_date date
+  end_date date
+}
+
+Table dim_date {
+  date_key int [pk]
+  full_date date
+  year int
+  quarter int
+  month int
+  month_name varchar
+  week_number int
+  day_name varchar
+  is_weekend bit
+}
+
+Table dim_plan {
+  plan_key int [pk, increment]
+  plan_name varchar
+  plan_price decimal
+  plan_type varchar
+}
+
+Table dim_location {
+  location_key int [pk, increment]
+  district varchar
+  city varchar
+  region varchar
+  zone varchar
+}
+
+Table dim_event_type {
+  event_type_key int [pk, increment]
+  event_type_name varchar
+  category varchar
+}
+
+Table dim_channel {
+  channel_key int [pk, increment]
+  channel_name varchar
+  channel_type varchar
+  is_digital bit
+}
+
+Table dim_severity {
+  severity_key int [pk, increment]
+  severity_level varchar
+  response_time_hours int
+}
+
+Table dim_fraud {
+  fraud_key int [pk, increment]
+  fraud_type varchar
+  risk_level varchar
+  detection_method varchar
+}
+
+Table fact_events {
+  event_key bigint [pk, increment]
+  customer_key int
+  date_key int
+  plan_key int
+  location_key int
+  event_type_key int
+  channel_key int
+  severity_key int
+  fraud_key int
+  event_id varchar
+  amount decimal
+  duration_sec int
+  days_to_resolve int
+  event_count int
+  load_date datetime
+  source_system varchar
+}
+
+/* العلاقات (Foreign Keys) */
+Ref: fact_events.customer_key > dim_customer.customer_key
+Ref: fact_events.date_key > dim_date.date_key
+Ref: fact_events.plan_key > dim_plan.plan_key
+Ref: fact_events.location_key > dim_location.location_key
+Ref: fact_events.event_type_key > dim_event_type.event_type_key
+Ref: fact_events.channel_key > dim_channel.channel_key
+Ref: fact_events.severity_key > dim_severity.severity_key
+Ref: fact_events.fraud_key > dim_fraud.fraud_key

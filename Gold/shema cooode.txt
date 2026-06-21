@@ -1,0 +1,261 @@
+
+-- ============================================================
+-- SAFE DROP (SYNAPSE COMPATIBLE - NO PARSE ERRORS)
+-- ============================================================
+
+IF OBJECT_ID('v_customer_360','V') IS NOT NULL
+BEGIN
+    DROP VIEW v_customer_360;
+END
+GO
+
+IF OBJECT_ID('fact_events','U') IS NOT NULL
+BEGIN
+    DROP TABLE fact_events;
+END
+GO
+
+IF OBJECT_ID('dim_fraud','U') IS NOT NULL
+BEGIN
+    DROP TABLE dim_fraud;
+END
+GO
+
+IF OBJECT_ID('dim_severity','U') IS NOT NULL
+BEGIN
+    DROP TABLE dim_severity;
+END
+GO
+
+IF OBJECT_ID('dim_channel','U') IS NOT NULL
+BEGIN
+    DROP TABLE dim_channel;
+END
+GO
+
+IF OBJECT_ID('dim_event_type','U') IS NOT NULL
+BEGIN
+    DROP TABLE dim_event_type;
+END
+GO
+
+IF OBJECT_ID('dim_location','U') IS NOT NULL
+BEGIN
+    DROP TABLE dim_location;
+END
+GO
+
+IF OBJECT_ID('dim_plan','U') IS NOT NULL
+BEGIN
+    DROP TABLE dim_plan;
+END
+GO
+
+IF OBJECT_ID('dim_date','U') IS NOT NULL
+BEGIN
+    DROP TABLE dim_date;
+END
+GO
+
+IF OBJECT_ID('dim_customer','U') IS NOT NULL
+BEGIN
+    DROP TABLE dim_customer;
+END
+GO
+
+
+
+CREATE TABLE dim_customer (
+    customer_key INT,
+    customer_id VARCHAR(50),
+    full_name VARCHAR(100),
+    age INT,
+    credit_score INT,
+    age_group VARCHAR(20),
+    registration_date DATE,
+    tenure_months INT,
+    is_current BIT,
+    effective_date DATE,
+    end_date DATE
+)
+WITH (DISTRIBUTION = HASH(customer_id));
+GO
+
+
+
+
+
+
+
+CREATE TABLE fact_events (
+    event_key BIGINT,
+    customer_key INT,
+    date_key INT,
+    plan_key INT,
+    location_key INT,
+    event_type_key INT,
+    channel_key INT,
+    severity_key INT,
+    fraud_key INT,
+
+    event_id VARCHAR(100),
+    amount DECIMAL(18,2),
+    duration_sec INT,
+    days_to_resolve INT,
+    event_count INT,
+
+    load_date DATETIME,
+    source_system VARCHAR(50)
+)
+WITH (DISTRIBUTION = HASH(customer_key));
+GO
+
+
+-- 2. DIM DATE
+-- ============================================================
+
+CREATE TABLE dim_date (
+    date_key INT,
+    full_date DATE,
+    year INT,
+    quarter INT,
+    month INT,
+    month_name VARCHAR(20),
+    week_number INT,
+    day_name VARCHAR(20),
+    is_weekend BIT
+)
+WITH (DISTRIBUTION = REPLICATE);
+GO
+
+-- ============================================================
+-- 3. DIM PLAN
+-- ============================================================
+
+CREATE TABLE dim_plan (
+    plan_key INT,
+    plan_name VARCHAR(50),
+    plan_price DECIMAL(10,2),
+    plan_type VARCHAR(20)
+)
+WITH (DISTRIBUTION = REPLICATE);
+GO
+
+-- ============================================================
+-- 4. DIM LOCATION
+-- ============================================================
+
+CREATE TABLE dim_location (
+    location_key INT,
+    district VARCHAR(100),
+    city VARCHAR(50),
+    region VARCHAR(50),
+    zone VARCHAR(20)
+)
+WITH (DISTRIBUTION = REPLICATE);
+GO
+
+-- ============================================================
+-- 5. DIM EVENT TYPE
+-- ============================================================
+
+CREATE TABLE dim_event_type (
+    event_type_key INT,
+    event_type_name VARCHAR(50),
+    category VARCHAR(30)
+)
+WITH (DISTRIBUTION = REPLICATE);
+GO
+
+-- ============================================================
+-- 6. DIM CHANNEL
+-- ============================================================
+
+CREATE TABLE dim_channel (
+    channel_key INT,
+    channel_name VARCHAR(50),
+    channel_type VARCHAR(20),
+    is_digital BIT
+)
+WITH (DISTRIBUTION = REPLICATE);
+GO
+
+-- ============================================================
+-- 7. DIM SEVERITY
+-- ============================================================
+
+CREATE TABLE dim_severity (
+    severity_key INT,
+    severity_level VARCHAR(20),
+    response_time_hours INT
+)
+WITH (DISTRIBUTION = REPLICATE);
+GO
+
+-- ============================================================
+-- 8. DIM FRAUD
+-- ============================================================
+
+CREATE TABLE dim_fraud (
+    fraud_key INT,
+    fraud_type VARCHAR(50),
+    risk_level VARCHAR(20),
+    detection_method VARCHAR(50)
+)
+WITH (DISTRIBUTION = REPLICATE);
+GO
+
+-- ============================================================
+-- CUSTOMER 360 VIEW
+-- ============================================================
+
+CREATE VIEW v_customer_360
+AS
+SELECT 
+    c.customer_id,
+    c.full_name,
+    c.age_group,
+    p.plan_name,
+    l.region,
+
+    SUM(ISNULL(f.amount,0)) AS total_revenue,
+    SUM(ISNULL(f.event_count,0)) AS total_events,
+
+    SUM(CASE 
+        WHEN ISNULL(fu.fraud_type,'No Fraud') <> 'No Fraud'
+        THEN 1 ELSE 0 
+    END) AS total_fraud_events,
+
+    SUM(CASE WHEN et.category = 'Call' THEN 1 ELSE 0 END) AS total_calls,
+    SUM(CASE WHEN et.category = 'Transaction' THEN 1 ELSE 0 END) AS total_transactions,
+    SUM(CASE WHEN et.category = 'Complaint' THEN 1 ELSE 0 END) AS total_complaints
+
+FROM fact_events f
+JOIN dim_customer c
+    ON f.customer_key = c.customer_key
+   AND c.is_current = 1
+
+LEFT JOIN dim_plan p ON f.plan_key = p.plan_key
+LEFT JOIN dim_location l ON f.location_key = l.location_key
+LEFT JOIN dim_event_type et ON f.event_type_key = et.event_type_key
+LEFT JOIN dim_fraud fu ON f.fraud_key = fu.fraud_key
+
+GROUP BY 
+    c.customer_id,
+    c.full_name,
+    c.age_group,
+    p.plan_name,
+    l.region;
+GO
+
+
+
+
+
+
+
+
+
+
+
+
