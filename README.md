@@ -1,4 +1,4 @@
-Telecom-Fraud-Analytics-Cloud-Data-Warehouse
+# Telecom-Fraud-Analytics-Cloud-Data-Warehouse
 
 > An end-to-end cloud data warehouse and fraud analytics platform for telecom customer 360 insights, built on Microsoft Azure using Medallion Architecture (Bronze-Silver-Gold), Star Schema, and Power BI.
 
@@ -32,43 +32,12 @@ Build a scalable cloud data platform that:
 ---
 
 ##  Architecture
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ RAW CSV FILES │
-│ (Calls, Customers, Recharges, Complaints) │
-└─────────────────────────────────────────────────────────────────────────────┘
-│
-▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ BRONZE LAYER (Raw Data) │
-│ Azure Data Lake Storage Gen2 │
-│ Immutable raw data storage │
-└─────────────────────────────────────────────────────────────────────────────┘
-│
-▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ SILVER LAYER (Cleaned Data) │
-│ Azure Databricks (PySpark) │
-│ 13 Data Quality Rules Applied │
-│ Output: Cleaned Parquet Files │
-└─────────────────────────────────────────────────────────────────────────────┘
-│
-▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ GOLD LAYER (Star Schema) │
-│ Feature Engineering + Fraud Engine │
-│ Azure SQL Database / Synapse │
-│ 1 Fact Table + 8 Dimension Tables │
-└─────────────────────────────────────────────────────────────────────────────┘
-│
-▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ REPORTING LAYER │
-│ Power BI Dashboard │
-│ 4 Interactive Pages │
-│ 12+ KPIs │
-└─────────────────────────────────────────────────────────────────────────────┘
 
-text
+*(Place your architecture diagram here – recommended size: 800x400px)*
+
+![Architecture Diagram](images/architecture_diagram.png)
+
+The diagram illustrates the end-to-end data flow from raw CSV files through Bronze, Silver, and Gold layers to Power BI reporting.
 
 ---
 
@@ -117,14 +86,15 @@ text
 | Regular Recharge Pattern | Consistent weekly behavior | -10 |
 
 ### Fraud Score Formula
+
+```math
 Fraud Score = (Sum of Negative Rules) - (Sum of Positive Rules)
 Fraud Score = max(0, min(100, Fraud Score))
-
-text
+```
 
 ---
 
-## Project Results
+##  Project Results
 
 | Metric | Value |
 |--------|-------|
@@ -137,18 +107,19 @@ text
 | Idempotency | Verified |
 
 ### Risk Distribution
-🟢 Low 65% ████████████████████████████████████████████████████████
-🟡 Medium 25% █████████████████████████
-🟠 High 8% ████████
-🔴 Critical 2% ██
+
+```
+🟢 Low       65%  ████████████████████████████████████████████████████████
+🟡 Medium    25%  █████████████████████████
+🟠 High       8%  ████████
+🔴 Critical   2%  ██
 
 Total Customers: 5,000
-
-text
+```
 
 ---
 
-## Data Warehouse Design
+##  Data Warehouse Design
 
 ### Star Schema
 
@@ -167,7 +138,7 @@ text
 
 ---
 
-##  Power BI Dashboard
+## Power BI Dashboard
 
 ### Executive Dashboard
 - Total Calls
@@ -196,48 +167,44 @@ text
 ---
 
 ##  Repository Structure
+
+```
 Telecom-Fraud-Analytics-Cloud-Data-Warehouse/
 │
-├── bronze/ # Raw data layer
-├── silver/ # Cleaned data layer
-├── gold/ # Curated data layer
-│
-├── scripts/ # ETL and transformation scripts
-├── notebooks/ # Databricks notebooks
-├── reports/ # Power BI reports
-├── docs/ # Project documentation
-│
-└── README.md # Project overview
-
-text
+├── bronze/                   # Raw data layer
+├── silver/                   # Cleaned data layer
+├── gold/                     # Curated data layer
 
 ---
 
 ##  How to Run
 
-### 1. Set up Azure resources
-- Create Resource Group
-- Create Storage Account (ADLS Gen2)
-- Create Databricks Workspace
-- Create Synapse Workspace / SQL Database
+1. **Set up Azure resources**
+   - Create Resource Group
+   - Create Storage Account (ADLS Gen2)
+   - Create Databricks Workspace
+   - Create Synapse Workspace / SQL Database
 
-### 2. Upload raw data to Bronze layer
-- Upload CSV files to `bronze/` container
+2. **Upload raw data to Bronze layer**
+   - Upload CSV files to `bronze/` container
 
-### 3. Run Databricks notebooks
-- `01_bronze_to_silver.ipynb` – applies data quality rules
-- `02_silver_to_gold.ipynb` – builds Star Schema
+3. **Run Databricks notebooks**
+   - `01_bronze_to_silver.ipynb` – applies data quality rules
+   - `02_silver_to_gold.ipynb` – builds Star Schema
 
-### 4. Connect Power BI
-- Open `Telecom_Dashboard.pbix`
-- Update connection string
-- Refresh and explore
+4. **Connect Power BI**
+   - Open `Telecom_Dashboard.pbix`
+   - Update connection string
+   - Refresh and explore
 
 ---
 
-## Future Improvements
+##  Future Improvements
 
 - Machine Learning fraud detection
 - Real-time streaming using Azure Event Hub
 - Automated alerts for Critical Risk customers
 - CI/CD deployment pipeline
+---
+
+**الـ README أصبح احترافياً وجاهزاً للنسخ! 🚀**
