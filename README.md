@@ -1,210 +1,203 @@
-# Telecom-Fraud-Analytics-Cloud-Data-Warehouse
+# Telecom Fraud Analytics – Cloud Data Warehouse
 
-> An end-to-end cloud data warehouse and fraud analytics platform for telecom customer 360 insights, built on Microsoft Azure using Medallion Architecture (Bronze-Silver-Gold), Star Schema, and Power BI.
-
-The platform processes **1.4 million call records** for **5,000 telecom customers** and generates a **Fraud Score (0–100)** to classify customers into risk levels, detecting harmful calling behavior such as Vishing (Voice Phishing) and Telephone Harassment.
+End-to-end cloud-based fraud analytics and customer intelligence platform for telecom operators, built on Microsoft Azure using Medallion Architecture, Azure Databricks, Azure Data Lake Storage Gen2, Azure SQL/Synapse, and Power BI.
 
 ---
 
-##  Project Objective
+## Architecture
 
-Build a scalable cloud data platform that:
+<img width="943" height="241" alt="image" src="https://github.com/user-attachments/assets/0955d066-92ee-4305-873e-c62126fe6c80" />
 
-- ✅ Processes telecom customer data at scale
-- ✅ Detects suspicious calling behavior
-- ✅ Generates explainable fraud scores
-- ✅ Provides actionable business insights through dashboards
-- ✅ Implements a complete Medallion Architecture pipeline
+
+### Data Flow
+
+1. Raw telecom data is ingested from CSV files.
+2. Data is stored in Azure Data Lake Storage Gen2 (Bronze Layer).
+3. Azure Databricks performs data cleansing, validation, and transformation.
+4. Curated datasets are stored in Silver and Gold layers.
+5. Azure Synapse serves as the analytical data warehouse.
+6. Power BI provides executive, fraud, customer behavior, and complaint analytics dashboards.
+
+---
+## Project Overview
+
+Telecommunication providers generate massive volumes of call records, customer interactions, transactions, and complaints every day. Detecting fraudulent activities such as voice phishing (Vishing), spam campaigns, and abusive calling behavior requires scalable data platforms capable of processing large datasets efficiently.
+
+This project delivers a cloud-native Data Engineering and Analytics solution that integrates customer data into a centralized Customer 360 platform while providing a transparent fraud scoring engine for risk detection and operational decision-making.
+
+### Business Objectives
+
+* Build a scalable cloud data warehouse for telecom analytics.
+* Create a unified Customer 360 view.
+* Detect suspicious customer behavior using explainable fraud rules.
+* Enable data-driven decision making through interactive dashboards.
+* Improve data quality, governance, and reporting efficiency.
 
 ---
 
-##  Risk Classification
+## Architecture
 
-| Risk Level | Score Range | Action |
-|------------|-------------|--------|
-| 🔴 Critical | 80 – 100 | Immediate investigation required |
-| 🟠 High | 60 – 79 | High probability – investigate |
-| 🟡 Medium | 30 – 59 | Needs monitoring |
-| 🟢 Low | 0 – 29 | Normal behavior |
+### Medallion Architecture
 
-> Every fraud score is fully explainable and can be traced back to the exact rule that triggered it.
+### Bronze Layer
 
----
+* Raw telecom data ingestion.
+* Call Detail Records (CDR).
+* Customer profiles.
+* Transactions.
+* Complaints.
 
-##  Architecture
+### Silver Layer
 
-*(Place your architecture diagram here – recommended size: 800x400px)*
+Data cleansing and standardization using Azure Databricks (PySpark).
 
-![Architecture Diagram](images/architecture_diagram.png)
+Implemented:
 
-The diagram illustrates the end-to-end data flow from raw CSV files through Bronze, Silver, and Gold layers to Power BI reporting.
+* 13 Data Quality Rules.
+* Missing value handling.
+* Data type validation.
+* Duplicate removal.
+* Business rule validation.
 
----
+### Gold Layer
 
-##  Medallion Architecture
-
-| Layer | Purpose | Technology |
-|-------|---------|------------|
-| **Bronze** | Raw data ingestion from CSV files | Azure Data Lake Storage Gen2 |
-| **Silver** | Data cleaning, validation & 13 quality rules | Azure Databricks (PySpark) → Parquet |
-| **Gold** | Feature engineering & fraud scoring | Azure SQL Database / Synapse (Star Schema) |
+Business-ready analytical datasets optimized for reporting and fraud analysis.
 
 ---
 
-##  Technology Stack
+## Technology Stack
 
-| Layer | Technology | Purpose |
-|-------|------------|---------|
-| **Storage** | Azure Data Lake Storage Gen2 | Raw & cleaned data |
-| **Processing** | Azure Databricks (PySpark) | Data transformation |
-| **Data Warehouse** | Azure SQL Database / Synapse | Star Schema |
-| **Fraud Engine** | SQL Rule-Based Engine | Fraud detection |
-| **Visualization** | Power BI | Dashboards |
-| **Data Generation** | Python (Pandas, NumPy) | Simulated dataset |
-
----
-
-##  Fraud Rules Engine
-
-### 🔴 Negative Indicators
-
-| Rule | Description | Weight |
-|------|-------------|--------|
-| High Call Frequency | > 60 calls/day | +20 |
-| Very Short Calls | Avg duration < 10 sec | +15 |
-| Repeated Calls | > 10 calls/hour to same number | +15 |
-| Random Number Pattern | > 20 new numbers/day + answer rate < 20% | +20 |
-| Complaints | Fraud/Harassment complaints | +30 |
-| High Off-net Usage | Off-net > 60% + complaints | +15 |
-
-### 🟢 Positive Indicators
-
-| Rule | Description | Weight |
-|------|-------------|--------|
-| Number Correction | 1–2 digit difference | -5 |
-| Normal Call Duration | 60–300 sec | -10 |
-| Regular Recharge Pattern | Consistent weekly behavior | -10 |
-
-### Fraud Score Formula
-
-```math
-Fraud Score = (Sum of Negative Rules) - (Sum of Positive Rules)
-Fraud Score = max(0, min(100, Fraud Score))
-```
+| Category       | Technology                                   |
+| -------------- | -------------------------------------------- |
+| Cloud Platform | Microsoft Azure                              |
+| Storage        | Azure Data Lake Storage Gen2                 |
+| Processing     | Azure Databricks (PySpark)                   |
+| Data Warehouse | Azure SQL Database / Azure Synapse Analytics |
+| Modeling       | Star Schema                                  |
+| Visualization  | Power BI                                     |
+| Programming    | Python, SQL                                  |
+| Architecture   | Medallion Architecture                       |
 
 ---
 
-##  Project Results
-
-| Metric | Value |
-|--------|-------|
-| Calls Processed | 1.4 Million |
-| Customers | 5,000 |
-| Fraud Rules | 9 |
-| High/Critical Risk Customers | 115 |
-| Data Quality | 98.8% |
-| Runtime | ~15 Minutes |
-| Idempotency | Verified |
-
-### Risk Distribution
-
-```
-🟢 Low       65%  ████████████████████████████████████████████████████████
-🟡 Medium    25%  █████████████████████████
-🟠 High       8%  ████████
-🔴 Critical   2%  ██
-
-Total Customers: 5,000
-```
-
----
-
-##  Data Warehouse Design
+## Data Warehouse Design
 
 ### Star Schema
 
-**Fact Table**
-- `fact_events_dedup`
+#### Fact Table
 
-**Dimension Tables**
-- `dim_customer`
-- `dim_date`
-- `dim_location`
-- `dim_plan`
-- `dim_subscription`
-- `dim_recharge`
-- `dim_complaint`
-- `dim_risk`
+* Fact_CustomerActivity
+
+#### Dimension Tables
+
+* DimCustomer
+* DimDate
+* DimRegion
+* DimPlan
+* DimFraudRisk
+* DimComplaint
+* DimCallType
+* DimUsageCategory
+
+Total:
+
+* 1 Fact Table
+* 8 Dimension Tables
+
+---
+
+## Fraud Scoring Engine
+
+The fraud detection framework uses a transparent rule-based scoring model designed for explainability and operational trust.
+
+### Fraud Indicators
+
+Negative Indicators:
+
+* Excessive outgoing calls
+* High unique recipient count
+* Short-duration call patterns
+* Repeated complaint history
+* Suspicious calling frequency
+* High-risk behavioral activity
+
+Positive Indicators:
+
+* Long customer tenure
+* Consistent usage behavior
+* Stable payment history
+
+### Risk Classification
+
+| Score    | Risk Level |
+| -------- | ---------- |
+| 0 – 29   | Low        |
+| 30 – 59  | Medium     |
+| 60 – 79  | High       |
+| 80 – 100 | Critical   |
+
+---
+
+## Project Statistics
+
+| Metric                       | Value       |
+| ---------------------------- | ----------- |
+| Customers                    | 5,000+      |
+| Call Records                 | 1.4 Million |
+| Analysis Period              | 3 Months    |
+| Data Quality Score           | 98.8%       |
+| Critical/High Risk Customers | 115         |
+| Pipeline Runtime             | ~15 Minutes |
 
 ---
 
 ## Power BI Dashboard
 
-### Executive Dashboard
-- Total Calls
-- Revenue
-- Fraud Rate
-- Active Customers
-- Revenue Trend
+The reporting layer consists of four interactive dashboard pages:
 
-### Fraud Analysis
-- Top 5 High-Risk Customers
-- Risk Distribution
-- Behavioral Patterns
+### Executive Overview
 
-### Customer Behaviour
-- Age Distribution
-- Subscription Type
-- Average Call Duration
-- Recharge Channels
+* Total customers
+* Revenue metrics
+* Fraud distribution
+* Business KPIs
 
-### Complaints Analytics
-- Total Complaints
-- Resolution Days
-- Complaint Categories
-- Monthly Trend
+### Fraud Analytics
 
----
+* Risk segmentation
+* Fraud score distribution
+* High-risk customer monitoring
 
-##  Repository Structure
+### Customer Behavior
 
-```
-Telecom-Fraud-Analytics-Cloud-Data-Warehouse/
-│
-├── bronze/                   # Raw data layer
-├── silver/                   # Cleaned data layer
-├── gold/                     # Curated data layer
+* Usage trends
+* Calling patterns
+* Customer segmentation
+
+### Complaints Analysis
+
+* Complaint categories
+* Regional trends
+* Customer satisfaction insights
 
 ---
 
-##  How to Run
+## Key Achievements
 
-1. **Set up Azure resources**
-   - Create Resource Group
-   - Create Storage Account (ADLS Gen2)
-   - Create Databricks Workspace
-   - Create Synapse Workspace / SQL Database
-
-2. **Upload raw data to Bronze layer**
-   - Upload CSV files to `bronze/` container
-
-3. **Run Databricks notebooks**
-   - `01_bronze_to_silver.ipynb` – applies data quality rules
-   - `02_silver_to_gold.ipynb` – builds Star Schema
-
-4. **Connect Power BI**
-   - Open `Telecom_Dashboard.pbix`
-   - Update connection string
-   - Refresh and explore
+* Processed over 1.4 million telecom events.
+* Built a scalable Azure-based data platform.
+* Achieved 98.8% data quality after cleansing.
+* Developed an explainable fraud scoring framework.
+* Delivered actionable business insights through Power BI.
+* Enabled Customer 360 analytics for telecom operations.
 
 ---
 
-##  Future Improvements
+## Future Enhancements
 
-- Machine Learning fraud detection
-- Real-time streaming using Azure Event Hub
-- Automated alerts for Critical Risk customers
-- CI/CD deployment pipeline
----
+* Machine Learning-based fraud prediction.
+* Real-time streaming analytics using Azure Event Hub.
+* Automated fraud alerting workflows.
+* Customer churn prediction models.
+* Advanced anomaly detection.
 
-**الـ README أصبح احترافياً وجاهزاً للنسخ! 🚀**
